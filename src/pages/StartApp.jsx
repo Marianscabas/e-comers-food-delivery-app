@@ -1,14 +1,25 @@
 import React, { useState } from 'react';
 import login from './login';
 
-
 const images = [
-  require('../images/next1.png'),
-  require('../images/next2.png'),
-  require('../images/next3.png'),
+  {
+    src: require('../images/next1.png'),
+    alt: 'Introducción a la aplicación',
+    title: 'Choose what to eat choosing from a variety of restaurants from the list'
+  },
+  {
+    src: require('../images/next2.png'),
+    alt: 'Introducción a la aplicasion',
+    title: 'Choose where you want to deliver by indicating on the map'
+  },
+  {
+    src: require('../images/next3.png'),
+    alt: 'Introducción a la aplicasion',
+    title: 'We will deliver as soon as possible'
+  },
 ];
 
- export const StartApp= () => {
+export const StartApp = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
   const handleNext = () => {
@@ -20,11 +31,25 @@ const images = [
   };
 
   return (
-    <div className='bg-slate-800 '>
-      <img src={images[currentImage]} alt="Introducción a la aplicación" />
-      <button onClick={handleNext}>Next</button>
+    <div className="flex flex-col justify-center   items-center gap-11">
+      <img
+        className=" "
+        src={images[currentImage].src}
+        width="250px"
+        height="280px"
+        alt={images[currentImage].alt}
+      />
+      <h3 
+      className='text-center font-inter  '>
+        {images[currentImage].title}
+      </h3>
+
+      <button 
+      className="bg-yellow-300 fixed mt-96 h-8 w-64 rounded-full    "
+       onClick={handleNext}>
+        Next
+      </button>
     </div>
   );
 };
-
-export default StartApp;
+ export default StartApp
