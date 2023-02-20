@@ -12,36 +12,26 @@ const Carrucel = ({ images, interval = 7000, transition = 500 }) => {
     return () => clearTimeout(timeout);
   }, [currentIndex, images.length, interval]);
 
-
   return (
     <Carousel
       autoPlay
       infiniteLoop
       interval={interval}
       transitionTime={transition}
-      showStatus={true}
+      showStatus={false}
       showArrows={false}
       showThumbs={false}
-      showIndicators={true}    
+      showIndicators={true}
       selectedItem={currentIndex}
       onChange={setCurrentIndex}
-  
     >
       {images.map((image, index) => (
-
-        <div 
-className="rounded-full mt-20 p-3 "
-        key={index}>
-          <img 
-         
-          className=" h-16    "
-          src={image} alt={`Slide ${index}`} />
-        
+        <div className="rounded-full  p-5" key={index}>
+          <img className=" h-16  rounded-full  " src={image} alt={`Slide ${index}`} />
         </div>
       ))}
     </Carousel>
   );
-}
+};
 
-
-export default Carrucel
+export default Carrucel;
