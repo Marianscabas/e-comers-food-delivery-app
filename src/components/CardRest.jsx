@@ -36,7 +36,8 @@ const RestaurantCard = ({ restaurante }) => {
   };
 
   return (
-    <div className="bg-gray text-xs p-5 m-5 rounded-xl">
+    <div 
+    className="bg-gray text-xs p-5 m-5 rounded-xl">
       <img src={restaurante.banner} alt="Banner" />
       <h2>{restaurante.name}</h2>
       <p>{restaurante.description}</p>
@@ -46,11 +47,16 @@ const RestaurantCard = ({ restaurante }) => {
   );
 };
 
+
 const Menu = ({ menu, categories, selectedCategory, handleSelectCategory }) => {
   const filteredMenu = selectedCategory === "" ? menu : menu.filter(item => item.category === selectedCategory);
 
   return (
-    <div className="bg-gray-dark p-5 m-5 text-sm rounded-xl">
+    <div data-te-spy="scroll"
+    data-te-target="#scrollspy1"
+    data-te-offset="200"
+ 
+    className="bg-white p-5 m-5 text-sm rounded-xl relative h-72  overflow-auto">
       <h3>Menú:</h3>
       <label htmlFor="category-select">Filtrar por categoría:</label>
       <select id="category-select" onChange={handleSelectCategory}>

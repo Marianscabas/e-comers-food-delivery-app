@@ -2,7 +2,7 @@ import React from "react";
 import Carrucel from "../components/Carrucel";
 import Navbar from "../layout/Navbar";
 import Card from "../components/Card";
-
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const images = [
@@ -12,7 +12,6 @@ const Home = () => {
   ];
 
   return (
-   
     <div>
       <div className="p-5 overflow-auto">
         <div className=" flex flex-row  ">
@@ -32,15 +31,14 @@ const Home = () => {
         </div>
         <span className=" text-gray ">Restaurants and cafes</span>
       </div>
-      <div> 
-     <Card />
+      <div>
+        <Card />
       </div>
 
       <div>
         <Navbar />
       </div>
     </div>
-   
   );
 };
 export default Home;

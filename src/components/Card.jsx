@@ -1,5 +1,6 @@
 import React, { useEffect , useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   const [restaurantes, setRestaurantes] = useState([]);
@@ -20,6 +21,7 @@ const Card = () => {
 
 
   return (
+    <Link to="/CardRest">
       <div
       data-te-spy="scroll"
       data-te-target="#scrollspy1"
@@ -43,6 +45,8 @@ const Card = () => {
           </div>
         ))}
       </div>
+      </Link>
+
       );
 };
 

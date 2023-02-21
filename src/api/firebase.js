@@ -1,6 +1,6 @@
 import {useEffect , useState} from "react";
 import { initializeApp } from "firebase/app";
-import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import { GoogleAuthProvider, getAuth, signInWithPopup , signOut } from "firebase/auth";
 import {getDatabase} from "firebase/database"
 
 // Your web app's Firebase configuration
@@ -46,3 +46,15 @@ export const handleGoogleLogin = async () => {
   }
 };
 
+export const logout = () => {
+  auth
+    .signOut()
+    .then(() => {
+      // La sesión se cerró correctamente
+      window.location.href = "/";
+    })
+    .catch((error) => {
+      // Error al cerrar sesión
+      console.log("Error al cerrar sesión: ", error);
+    });
+};
