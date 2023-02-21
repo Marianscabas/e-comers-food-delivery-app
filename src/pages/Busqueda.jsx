@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Navbar from "../layout/Navbar";
 
 const Busqueda = () => {
 
@@ -62,6 +63,7 @@ const Busqueda = () => {
           </li>
         ))}
       </ul>
+      <Navbar/>
     </div>
   );
 };

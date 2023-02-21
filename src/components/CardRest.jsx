@@ -1,5 +1,6 @@
 import React, { useState , useEffect} from "react";
 import axios from "axios";
+import Navbar from "../layout/Navbar";
 
 const CardRest = () => {
   const [restaurantes, setRestaurantes] = useState([]);
@@ -70,6 +71,7 @@ const Menu = ({ menu, categories, selectedCategory, handleSelectCategory }) => {
           <p>Tiempo de preparación: {item.cookingTime}</p>
         </div>
       ))}
+      <Navbar/>
     </div>
   );
 };
