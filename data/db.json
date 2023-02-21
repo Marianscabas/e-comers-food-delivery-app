@@ -1,0 +1,214 @@
+{
+    "restaurantes": [
+        {
+            "id": "1",
+            "name": "Pizza Palace",
+            "description": "A family-friendly pizzeria with a variety of toppings.",
+            "banner": "https://example.com/images/pizza-palace-banner.jpg",
+            "stars": 4.5,
+            "schedule": "Monday - Friday: 11am - 10pm, Saturday - Sunday: 11am - 11pm",
+            "logo": "https://example.com/images/pizza-palace-logo.png",
+            "food-categories": [
+                "pizza",
+                "hamburger",
+                "salad",
+                "pasta"
+            ],
+            "menu": [
+                {
+                    "idItem": "1",
+                    "name": "Margherita Pizza",
+                    "description": "Classic pizza with tomato sauce, mozzarella, and fresh basil.",
+                    "price": 12.99,
+                    "image": "https://example.com/images/margherita-pizza.jpg",
+                    "category": "pizza",
+                    "cookingTime": "15 minutes"
+                },
+                {
+                    "idItem": "2",
+                    "name": "Pepperoni Pizza",
+                    "description": "Pizza with tomato sauce, mozzarella, and spicy pepperoni.",
+                    "price": 14.99,
+                    "image": "https://example.com/images/pepperoni-pizza.jpg",
+                    "category": "pizza",
+                    "cookingTime": "20 minutes"
+                },
+                {
+                    "idItem": "3",
+                    "name": "Caesar Salad",
+                    "description": "Romaine lettuce, croutons, parmesan cheese, and Caesar dressing.",
+                    "price": 8.99,
+                    "image": "https://example.com/images/caesar-salad.jpg",
+                    "category": "salad",
+                    "cookingTime": "5 minutes"
+                },
+                {
+                    "idItem": "4",
+                    "name": "Spaghetti Bolognese",
+                    "description": "Pasta with ground beef, tomato sauce, and parmesan cheese.",
+                    "price": 11.99,
+                    "image": "https://example.com/images/spaghetti-bolognese.jpg",
+                    "category": "pasta",
+                    "cookingTime": "10 minutes"
+                }
+            ]
+        },
+        {
+            "id": "2",
+            "name": "Sushi Station",
+            "description": "A trendy sushi restaurant with a fusion twist.",
+            "banner": "https://example.com/images/sushi-station-banner.jpg",
+            "stars": 4.2,
+            "schedule": "Monday - Friday: 12pm - 10pm, Saturday - Sunday: 11am - 11pm",
+            "logo": "https://example.com/images/sushi-station-logo.png",
+            "food-categories": [
+                "sushi",
+                "ramen",
+                "salad",
+                "appetizers"
+            ],
+            "menu": [
+                {
+                    "idItem": "1",
+                    "name": "Rainbow Roll",
+                    "description": "California roll topped with a colorful array of fish and avocado.",
+                    "price": 16.99,
+                    "image": "https://example.com/images/rainbow-roll.jpg",
+                    "category": "sushi",
+                    "cookingTime": "10 minutes"
+                },
+                {
+                    "idItem": "2",
+                    "name": "Volcano Roll",
+                    "description": "California roll with baked crab mix, spicy mayo, and eel sauce.",
+                    "price": 14.99,
+                    "image": "https://example.com/images/volcano-roll.jpg",
+                    "category": "sushi",
+                    "cookingTime": "10 minutes"
+                },
+                {
+                    "idItem": "3",
+                    "name": "Tonkotsu Ramen",
+                    "description": "Pork-based broth with noodles, chashu pork, and soft-boiled egg.",
+                    "price": 12.99,
+                    "image": "https://example.com/images/tonkotsu-ramen.jpg",
+                    "category": "ramen",
+                    "cookingTime": "15 minutes"
+                },
+                {
+                    "idItem": "4",
+                    "name": "Edamame",
+                    "description": "Steamed soybeans with sea salt.",
+                    "price": 4.99,
+                    "image": "https://example.com/images/edamame.jpg",
+                    "category": "appetizers",
+                    "cookingTime": "5 minutes"
+                }
+            ]
+        },
+        {
+            "id": "3",
+            "name": "Burgers & Fries",
+            "description": "A fast-casual restaurant serving burgers, fries, and milkshakes.",
+            "banner": "https://example.com/images/burgers-and-fries-banner.jpg",
+            "stars": 3.8,
+            "schedule": "Open daily: 11am - 9pm",
+            "logo": "https://example.com/images/burgers-and-fries-logo.png",
+            "food-categories": [
+                "burger",
+                "fries",
+                "milkshake"
+            ],
+            "menu": [
+                {
+                    "idItem": "1",
+                    "name": "Classic Burger",
+                    "description": "Beef patty, lettuce, tomato, onion, and special sauce on a sesame seed bun.",
+                    "price": 8.99,
+                    "image": "https://example.com/images/classic-burger.jpg",
+                    "category": "burger",
+                    "cookingTime": "10 minutes"
+                },
+                {
+                    "idItem": "2",
+                    "name": "Bacon Cheeseburger",
+                    "description": "Beef patty, bacon, cheddar cheese, lettuce, tomato, and special sauce on a sesame seed bun.",
+                    "price": 10.99,
+                    "image": "https://example.com/images/bacon-cheeseburger.jpg",
+                    "category": "burger",
+                    "cookingTime": "12 minutes"
+                },
+                {
+                    "idItem": "3",
+                    "name": "Truffle Fries",
+                    "description": "Crispy fries topped with truffle oil and parmesan cheese.",
+                    "price": 4.99,
+                    "image": "https://example.com/images/truffle-fries.jpg",
+                    "category": "fries",
+                    "cookingTime": "5 minutes"
+                },
+                {
+                    "idItem": "4",
+                    "name": "Chocolate Milkshake",
+                    "description": "Creamy milkshake made with chocolate ice cream and topped with whipped cream.",
+                    "price": 5.99,
+                    "image": "https://example.com/images/chocolate-milkshake.jpg",
+                    "category": "milkshake",
+                    "cookingTime": "2 minutes"
+                }
+            ]
+        },
+        {
+                "id": "4",
+                "name": "Sushi Time",
+                "description": "Japanese restaurant with sushi, noodles, and rice bowls.",
+                "banner": "https://example.com/images/sushi-time-banner.jpg",
+                "stars": 4.0,
+                "schedule": "Monday - Friday: 11am - 9pm, Saturday - Sunday: 12pm - 10pm",
+                "logo": "https://example.com/images/sushi-time-logo.png",
+                "food-categories": [
+                    "sushi",
+                    "noodles",
+                    "rice bowls"
+                ],
+                "menu": [
+                    {
+                        "idItem": "1",
+                        "name": "California Roll",
+                        "description": "Crab stick, avocado, and cucumber wrapped in rice and seaweed.",
+                        "price": 7.99,
+                        "image": "https://example.com/images/california-roll.jpg",
+                        "category": "sushi",
+                        "cookingTime": "5 minutes"
+                    },
+                    {
+                        "idItem": "2",
+                        "name": "Beef Udon",
+                        "description": "Thick noodles in a savory broth with sliced beef and vegetables.",
+                        "price": 10.99,
+                        "image": "https://example.com/images/beef-udon.jpg",
+                        "category": "noodles",
+                        "cookingTime": "15 minutes"
+                    },
+                    {
+                        "idItem": "3",
+                        "name": "Katsu Curry Rice Bowl",
+                        "description": "Breaded and fried chicken cutlet with curry sauce and rice.",
+                        "price": 12.99,
+                        "image": "https://example.com/images/katsu-curry-rice-bowl.jpg",
+                        "category": "rice bowls",
+                        "cookingTime": "20 minutes"
+                    },
+                    {
+                        "idItem": "4",
+                        "name": "Spicy Tuna Roll",
+                        "description": "Spicy tuna and cucumber wrapped in rice and seaweed.",
+                        "price": 8.99,
+                        "image": "https://example.com/images/spicy-tuna-roll.jpg",
+                        "category": "sushi",
+                        "cookingTime": "5 minutes"
+                    }
+                ]
+            }
+        ]
+}

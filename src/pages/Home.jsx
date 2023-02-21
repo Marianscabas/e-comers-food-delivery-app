@@ -1,7 +1,10 @@
 import React from "react";
 import Carrucel from "../components/Carrucel";
+import Navbar from "../layout/Navbar";
+import CardRest from "../components/CardRest";
 
 const Home = () => {
+
   const images = [
     require("../images/Promo1.png"),
     require("../images/Promo2.png"),
@@ -9,7 +12,8 @@ const Home = () => {
   ];
 
   return (
-    <div className=" p-5  ">
+    <div >
+      <div className="p-5">
       <div className=" flex flex-row  ">
         <div>
           <img width="40px" src="./location.svg" alt="icono-location" />
@@ -26,6 +30,14 @@ const Home = () => {
         <Carrucel images={images} />
       </div>
       <span className=" text-gray ">Restaurants and cafes</span>
+       </div>
+      <div 
+      className=" "
+      >  
+      <CardRest/>
+         <Navbar/>
+      </div>
+ 
     </div>
   );
 };
